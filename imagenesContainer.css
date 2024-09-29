@@ -1,0 +1,37 @@
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);     
+    gap: 10px;                              
+    width: 100%;                              
+}
+
+.imagen-grande {
+    grid-column: span 2;  
+    grid-row: span 2;      
+}
+
+#imagen-principal {
+    border-radius: 25px 0 0 25px;
+}
+
+#imagen-arriba-derecha {
+    border-radius: 0 25px 0 0;
+}
+
+#imagen-abajo-derecha {
+    border-radius: 0 0 25px 0;
+}
+
+figure {
+    margin: 0;              /* Elimina márgenes predeterminados */
+    height: 100%;           /* Asegura que el figure ocupe todo el alto del contenedor */
+    display: flex;          /* Asegura que la imagen se centre */
+    align-items: center;    /* Centra la imagen verticalmente */
+}
+
+img {
+    width: 100%;            /* La imagen ocupa todo el ancho del figure */
+    height: 100%;           /* La imagen ocupa todo el alto del figure */
+    object-fit: cover;      /* Mantiene la proporción de la imagen, recortando si es necesario */
+}

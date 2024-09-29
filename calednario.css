@@ -1,0 +1,62 @@
+ 
+#calendario > h3 {
+    font-size: 30px;
+    margin-top: 3%;
+
+}
+
+.calendario-encabezado {
+    width: 50%;
+    height: 380px;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-radius: 25px;
+    text-align: center;
+    border: 3px solid #3cca7779;
+}
+
+input {
+    padding: 0;
+  font-size: 18px;
+  border: none;
+  padding: 8px;
+  width: 250px; /* Ajustar el ancho */
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: relative;
+    right: 200px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+#grid-calendario {
+
+    display: grid;
+    height: 75%;
+    grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(6, 1fr);     
+}
+
+#grid-calendario p {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente (opcional) */
+    height: 50px;
+    font-size: 24px;
+}
+
+#reserva-inicio {
+    border-radius: 25px 0 0 25px;
+}
+
+#reserva-final {
+    border-radius: 0 25px 25px 0;
+}
+
+#reserva-inicio, #reserva, #reserva-final {
+    background-color: var(--color-verde-principal);
+    box-shadow: 15px 5px 20px #E5E5E5;
+}

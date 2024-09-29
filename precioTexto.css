@@ -1,0 +1,34 @@
+#precio-texto {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 3%;
+}
+
+#precio-texto-contenedor {
+    width: 50%;
+}
+
+#precio-texto-contenedor p {
+    margin-top: 5%;
+    padding-right: 2%;
+    font-size: 22px;
+}
+
+.botones-de-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    right: 25px;
+}
+
+.botones-de-contacto > button {
+    border-radius: 25px;
+    width: 150px;
+    height: 45px;
+    box-shadow: 
+    5px 5px 20px #E5E5E5, 
+    -5px -5px 20px #E5E5E5;
+}

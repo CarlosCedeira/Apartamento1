@@ -1,0 +1,27 @@
+.comodidades {
+    display: flex;
+    margin-top: 3%;
+}
+
+
+
+#comodidades-mapa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-bottom: 15%;
+}
+
+#contenedor-comodidades {
+    display: flex;
+    margin-left: 5%;
+
+}
+
+h2 {
+    font-size: 38px;
+}
+
+iframe {
+    border-radius: 25px;
+}

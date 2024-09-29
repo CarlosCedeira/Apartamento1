@@ -1,0 +1,27 @@
+#valoracion-general-encabezado{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    
+}
+
+#valoracion-general {
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+#estrellas, #reseñas {
+    display: flex;
+    align-items: center;
+    fill: rgb(95, 99, 104);
+    width: 25%;
+}
+
+#estrellas > h3, #reseñas > h3 {
+    margin-right: 15px;
+}
