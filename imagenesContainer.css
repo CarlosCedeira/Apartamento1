@@ -35,3 +35,7 @@ img {
     height: 100%;           /* La imagen ocupa todo el alto del figure */
     object-fit: cover;      /* Mantiene la proporción de la imagen, recortando si es necesario */
 }
+
+img:hover {
+    cursor: pointer;
+}

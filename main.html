@@ -29,30 +29,43 @@
 
   </div>
 
-  <div id="light-box">
-    <button id="close-lightbox">X</button>
-    <button id="back"><</button>
-    <button id="next">></button>
-  </div>
+  
 
   
   <div class="contenedor-imagenes">
     <figure class="imagen-grande">
-      <img id="imagen-principal" src="./Images/Panoramica.png" alt="Galería de imágenes" />
+      <img id="imagen-principal" src="./Images/Panoramica.png" data-indice="0" alt="Galería de imágenes" />
     </figure>
     <figure>
-      <img src="./Images/Habitacion1.jpg" alt="Galería de imágenes" />
+      <img src="./Images/Habitacion1.jpg" data-indice="1" alt="Galería de imágenes" />
     </figure>
     <figure>
-      <img id="imagen-arriba-derecha" src="./Images/Habitacion2.png" alt="Galería de imágenes" />
+      <img id="imagen-arriba-derecha" data-indice="2" src="./Images/Habitacion2.png" alt="Galería de imágenes" />
     </figure>
     <figure>
-      <img src="./Images/Habitacion3.png" alt="Galería de imágenes" />
+      <img src="./Images/Habitacion3.png" data-indice="3" alt="Galería de imágenes" />
     </figure>
     <figure>
-      <img id="imagen-abajo-derecha" src="./Images/Cocina.png" alt="Galería de imágenes" />
+      <img id="imagen-abajo-derecha" data-indice="4" src="./Images/Cocina.png" alt="Galería de imágenes" />
     </figure>
     
+    <figure>
+      <img class="hidden" data-indice="4" src="./Images/Comedor1.png" alt="Galería de imágenes" />
+    </figure>
+    <figure>
+      <figure>
+        <img class="hidden" data-indice="4" src="./Images/Comedor2.png" alt="Galería de imágenes" />
+      </figure>
+    </figure>
+      <img class="hidden" data-indice="4" src="./Images/Salon.png" alt="Galería de imágenes" />
+    </figure>
+
+    <div id="light-box">
+      <button id="close-lightbox">X</button>
+      <button id="back"><</button>
+      <button id="next">></button>
+    </div>
+
     <button id="btn-ver-imagenes">Ver mas</button>
   </div>
   
