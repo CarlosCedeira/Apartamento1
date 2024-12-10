@@ -7,14 +7,23 @@ const btnNextImage = document.querySelector("#next");
 const btnBackImage = document.querySelector("#back");
 const nuevaImagen = document.createElement("img"); // Imagen que se añadirá al lightbox
 
+console.log("contenedorImagenes");
+console.log(contenedorImagenes);
+
 // Seleccionamos todas las imágenes dentro de .contenedor-imagenes y extraemos sus fuentes
 const imagenesLightBox = Array.from(
   contenedorImagenes.querySelectorAll("img")
 ).map((img) => img.src);
 
+console.log("imagenesLightBox");
+console.log(imagenesLightBox);
+
 let indiceActual = 0; // Variable para mantener el índice actual de la imagen
 
 function mostrarImagen() {
+  console.log("indiceActual");
+  console.log(indiceActual);
+
   // Cambiamos la fuente de la imagen a mostrar
   nuevaImagen.src = imagenesLightBox[indiceActual];
 }
@@ -27,9 +36,17 @@ contenedorImagenes.addEventListener("click", (event) => {
     div.appendChild(nuevaImagen); // Añadimos la imagen al lightbox
     nuevaImagen.src = event.target.src; // Asignamos la fuente de la imagen clicada
 
-    // Obtenemos el índice de la imagen a partir del atributo data-indice
-    indiceActual = parseInt(event.target.dataset.indice);
+    // Verificamos si la imagen clicada tiene un data-indice válido
+    const indice = parseInt(event.target.dataset.indice);
+    if (!isNaN(indice)) {
+      indiceActual = indice; // Solo asignamos si el índice es válido
+    }
   }
+});
+
+// Evita que los clics dentro de la imagen ampliada modifiquen `indiceActual`
+nuevaImagen.addEventListener("click", (event) => {
+  event.stopPropagation(); // Evita que el clic se propague al contenedor
 });
 
 btnVerImagenes.addEventListener("click", () => {
