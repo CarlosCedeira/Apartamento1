@@ -1,9 +1,10 @@
 #light-box {
   position: absolute;
   top: 5%;
-  margin-top: 4.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   width: 90.5%;
-  height: 75.5%;
+  height: 98%;
   z-index: 1;
 
   display: none;
@@ -54,4 +55,42 @@
 
 .hidden {
   display: none;
+}
+
+
+
+/* Estilos para pantallas moviles */
+
+
+
+@media (max-width: 768px) {
+  .contenedor-imagenes {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+
+  figure {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+  }
+
+  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  #btn-ver-imagenes {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+ 
 }

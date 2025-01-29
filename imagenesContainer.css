@@ -39,3 +39,32 @@ img {
 img:hover {
     cursor: pointer;
 }
+
+
+
+
+@media (max-width: 768px) {
+    
+    .contenedor-imagenes {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;                              
+        width: 100%;                              
+    }   
+    
+    img , #imagen-principal, #imagen-arriba-derecha, #imagen-abajo-derecha{
+               border-radius: 25px;
+    }
+    
+    #imagen-principal {
+        position: relative;
+        right: 0;
+        display: block;
+    }
+    
+    .titulo-boton > button {
+        display: none;
+
+    }
+}
