@@ -1,27 +1,37 @@
 console.log("lightboxMobile.js");
 
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
+  console.log("Window fully loaded");
+
   const contenedorImagenes = document.querySelector(".contenedor-imagenes");
-  const images = contenedorImagenes.querySelectorAll("figure img");
+  console.log("contenedorImagenes:", contenedorImagenes);
 
-  let currentIndex = 1;
+  if (contenedorImagenes) {
+    const images = contenedorImagenes.querySelectorAll("figure img");
+    console.log("Images found:", images.length);
 
-  function showImage(index) {
-    images.forEach((img, i) => {
-      img.parentElement.style.zIndex = i === index ? 1 : 0;
-      img.parentElement.classList.toggle("hidden", i !== index);
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.parentElement.style.zIndex = i === index ? 1 : 0;
+        img.parentElement.classList.toggle("hidden", i !== index);
+      });
+    }
+
+    function nextImage() {
+      console.log("nextImage function called");
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    images.forEach((img) => {
+      img.addEventListener("click", nextImage);
+      console.log("Event listener added to image");
     });
-  }
 
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
+  } else {
+    console.log("contenedorImagenes not found");
   }
-
-  images.forEach((img) => {
-    img.addEventListener("click", nextImage);
-  });
-
-  showImage(currentIndex);
-  console.log("detected touch");
-});
+};
