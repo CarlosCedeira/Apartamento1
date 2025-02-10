@@ -53,6 +53,9 @@ article {
     display: flex;
 }
 
+
+
+
 @media (max-width: 768px) {
 
     iframe {
@@ -70,5 +73,25 @@ article {
         margin-left: 0px;
         margin-right:0px;
     }
+
+    .carousel-indicators {
+        text-align: center;
+        position: relative;;
+        z-index: 1;
+      }
+      
+      .carousel-indicators .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background-color: #F0F0F0;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .carousel-indicators .dot.active {
+        background-color: #2A9D2A
+      }
 
 }

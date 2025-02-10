@@ -4,6 +4,7 @@ window.onload = function () {
   console.log("Window fully loaded");
 
   const contenedorImagenes = document.querySelector(".contenedor-imagenes");
+  const dots = document.querySelectorAll(".carousel-indicators .dot");
   console.log("contenedorImagenes:", contenedorImagenes);
 
   if (contenedorImagenes) {
@@ -16,6 +17,9 @@ window.onload = function () {
       images.forEach((img, i) => {
         img.parentElement.style.zIndex = i === index ? 1 : 0;
         img.parentElement.classList.toggle("hidden", i !== index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
       });
     }
 
@@ -34,6 +38,13 @@ window.onload = function () {
     images.forEach((img) => {
       img.addEventListener("click", nextImage);
       console.log("Event listener added to image");
+    });
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", (e) => {
+        currentIndex = parseInt(e.target.dataset.indice);
+        showImage(currentIndex);
+      });
     });
 
     // Eventos táctiles para deslizar

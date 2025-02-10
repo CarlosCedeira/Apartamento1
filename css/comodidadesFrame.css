@@ -1,3 +1,7 @@
+h2 {
+    font-size: 38px;
+}
+
 #contenedor-comodidades {
     display: flex;
     margin-top: 3%;
@@ -5,6 +9,7 @@
 
 .comodidades {
     display: flex;
+    align-items: center; /* Centra verticalmente los elementos hijos */
     position: relative;
     left: -100%;
     top: 10%;
@@ -17,18 +22,14 @@
     fill: #5f6368;
 }
 
+.comodidades h3 {
+    align-items: end }
 
 #comodidades-mapa {
     display: flex;
     justify-content: space-between;
     margin-top: 2.5%;
     margin-bottom: 15%;
-}
-
-
-
-h2 {
-    font-size: 38px;
 }
 
 iframe {
