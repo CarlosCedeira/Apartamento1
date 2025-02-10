@@ -25,9 +25,35 @@ window.onload = function () {
       showImage(currentIndex);
     }
 
+    function prevImage() {
+      console.log("prevImage function called");
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
     images.forEach((img) => {
       img.addEventListener("click", nextImage);
       console.log("Event listener added to image");
+    });
+
+    // Eventos táctiles para deslizar
+    let startX = 0;
+    let endX = 0;
+
+    contenedorImagenes.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    contenedorImagenes.addEventListener("touchmove", (e) => {
+      endX = e.touches[0].clientX;
+    });
+
+    contenedorImagenes.addEventListener("touchend", () => {
+      if (startX > endX + 50) {
+        nextImage();
+      } else if (startX < endX - 50) {
+        prevImage();
+      }
     });
 
     showImage(currentIndex);

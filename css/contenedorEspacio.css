@@ -19,3 +19,14 @@
 .espacio h3 {
     margin-bottom: 2.5%;
 }
+
+@media (max-width: 768px) { 
+
+
+
+.contenedor-espacio{
+    flex-direction: column;
+    display: block;
+}
+
+}

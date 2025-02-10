@@ -75,25 +75,3 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
-
-// Añadir navegación con gestos táctiles
-let touchStartX = 0;
-let touchEndX = 0;
-
-nuevaImagen.addEventListener("touchstart", (event) => {
-  touchStartX = event.changedTouches[0].screenX;
-});
-
-nuevaImagen.addEventListener("touchend", (event) => {
-  touchEndX = event.changedTouches[0].screenX;
-  handleGesture();
-});
-
-function handleGesture() {
-  if (touchEndX < touchStartX) {
-    siguienteImagen();
-  }
-  if (touchEndX > touchStartX) {
-    anteriorImagen();
-  }
-}

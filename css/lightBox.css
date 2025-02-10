@@ -24,8 +24,8 @@
 }
 
 #img-light-box {
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vw;
 
 }
 
@@ -50,12 +50,12 @@
   cursor: auto;
   border-radius: 25px;
   object-fit: cover;
-
 }
 
 .hidden {
   display: none;
 }
+
 
 
 
@@ -90,7 +90,7 @@
   }
 
   .hidden {
-    display: none;
+    display: flex;
   }
  
 }

@@ -3,7 +3,9 @@
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 1fr);     
     gap: 10px;                              
-    width: 100%;                              
+    width: 100%;  
+    height: 100%; 
+    margin-bottom: 1%;                           
 }
 
 .imagen-grande {
@@ -52,11 +54,7 @@ img:hover {
         gap: 10px;                              
         width: 100%;                              
     }   
-    
-    img , #imagen-principal, #imagen-arriba-derecha, #imagen-abajo-derecha{
-               border-radius: 25px;
-    }
-    
+        
     #imagen-principal {
         position: relative;
         right: 0;

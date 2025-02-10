@@ -1,0 +1,63 @@
+#contenedor-comodidades {
+    display: flex;
+    margin-top: 3%;
+}
+
+.comodidades {
+    display: flex;
+    position: relative;
+    left: -100%;
+    top: 10%;
+    margin-top: 3%;
+}
+
+.comodidades svg {
+    width: 50px;
+    height: 50px;
+    fill: #5f6368;
+}
+
+
+#comodidades-mapa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-bottom: 15%;
+}
+
+
+
+h2 {
+    font-size: 38px;
+}
+
+iframe {
+    border-radius: 25px;
+}
+
+
+
+
+@media (max-width: 768px) { 
+    #contenedor-espacio {
+        display: block;
+    }
+
+    .comodidades {
+        position: initial;
+        display: flex;
+        margin-top: 3%;
+    }
+    
+    #comodidades-mapa {
+    flex-direction: column;    
+}
+
+
+    ul {
+        position: relative;
+        margin-top:  15%;
+        margin-bottom: 5%;
+        right: 50%;
+    }
+}
