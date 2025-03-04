@@ -15,15 +15,12 @@ body {
     margin-right: 5%;
 }
 
-.titulo-boton {
-    display: flex;
-    margin-bottom: 2%;
-    align-items: center;
+h1, h2 {
+    font-family: "montserrat", sans-serif;
 }
 
-.titulo-boton h1 {
-    font-size: 38px;
-    margin-top: 2%;
+p {
+    font-family: "open sans";
 }
 
 button {

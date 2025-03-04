@@ -10,19 +10,6 @@
   display: none;
 }
 
-/* 
-  la posicion absoluta esta cogiendo como referncia la pantalla por ausencia
-  de un elemento con display flex, añadir un dive que englobe el boton y la 
-  cuadriculoa grid, ver como afecta a la distribucion en diferentes pantallas
-*/
-
-#btn-ver-imagenes {
-  width: 150px;
-  position:absolute;
-  left: 83%;
-  bottom: 12%; 
-}
-
 #img-light-box {
   width: 100vh;
   height: 100vw;
@@ -83,10 +70,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-  }
-
-  #btn-ver-imagenes {
-    display: none;
   }
 
   .hidden {

@@ -1,22 +1,45 @@
-h2 {
-    font-size: 38px;
+
+#precio-texto-contenedor {
+    width: 70%;
 }
 
 #contenedor-comodidades {
     display: flex;
-    margin-top: 3%;
+    justify-content: space-between;
+
+}
+
+#precio-texto-contenedor p {
+    margin-top: 5%;
+    padding-right: 2%;
+    font-size: 22px;
+}
+
+.botones-de-contacto{
+    width: 100%;
+    display: flex;
+    right: 25px;
+}
+
+.botones-de-contacto > button {
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    width: 150px;
+    height: 45px;
+    box-shadow: 
+    5px 5px 20px #E5E5E5, 
+    -5px -5px 20px #E5E5E5;
 }
 
 .comodidades {
     display: flex;
     align-items: center; /* Centra verticalmente los elementos hijos */
-    position: relative;
-    left: -100%;
-    top: 10%;
-    margin-top: 3%;
 }
 
 .comodidades svg {
+    margin-top: 3px;
     width: 50px;
     height: 50px;
     fill: #5f6368;
@@ -25,15 +48,11 @@ h2 {
 .comodidades h3 {
     align-items: end }
 
-#comodidades-mapa {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.5%;
-    margin-bottom: 15%;
-}
+
 
 iframe {
     border-radius: 25px;
+    width: 100%;
 }
 
 
@@ -42,6 +61,14 @@ iframe {
 @media (max-width: 768px) { 
     #contenedor-espacio {
         display: block;
+    }
+
+    #precio-texto-contenedor {
+        width: 100%;
+    }
+
+    .botones-de-contacto > button {
+        margin-left: 1rem;
     }
 
     .comodidades {
@@ -54,11 +81,5 @@ iframe {
     flex-direction: column;    
 }
 
-
-    ul {
-        position: relative;
-        margin-top:  15%;
-        margin-bottom: 5%;
-        right: 50%;
-    }
+    
 }
