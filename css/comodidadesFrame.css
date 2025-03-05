@@ -33,6 +33,13 @@
     -5px -5px 20px grey;
 }
 
+.botones-de-contacto >button:active {
+    background: white;
+    color: #2A9D2A;
+    box-shadow: 5px 5px 20px #2A9D2A,
+      -5px -5px 20px #2A9D2A;
+}
+
 .comodidades {
     display: flex;
     align-items: center; /* Centra verticalmente los elementos hijos */
