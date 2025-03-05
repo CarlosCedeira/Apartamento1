@@ -1,6 +1,6 @@
 
 #precio-texto-contenedor {
-    width: 70%;
+    width: 50%;
 }
 
 #contenedor-comodidades {
@@ -29,8 +29,8 @@
     width: 150px;
     height: 45px;
     box-shadow: 
-    5px 5px 20px #E5E5E5, 
-    -5px -5px 20px #E5E5E5;
+    5px 5px 20px grey, 
+    -5px -5px 20px grey;
 }
 
 .comodidades {
@@ -45,8 +45,7 @@
     fill: #5f6368;
 }
 
-.comodidades h3 {
-    align-items: end }
+
 
 
 
