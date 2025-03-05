@@ -18,13 +18,13 @@
 .botones-de-contacto{
     width: 100%;
     display: flex;
+    justify-content:space-around;
     right: 25px;
 }
 
 .botones-de-contacto > button {
-    margin-top: 2rem;
-    margin-left: 8rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     border-radius: 25px;
     width: 150px;
     height: 45px;
@@ -45,10 +45,6 @@
     fill: #5f6368;
 }
 
-
-
-
-
 iframe {
     border-radius: 25px;
     width: 100%;
@@ -64,10 +60,6 @@ iframe {
 
     #precio-texto-contenedor {
         width: 100%;
-    }
-
-    .botones-de-contacto > button {
-        margin-left: 1rem;
     }
 
     .comodidades {

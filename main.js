@@ -23,3 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
     loadScript("lightboxComputer.js");
   }
 });
+
+const body = document.querySelector("body");
+const contactar = document.getElementById("contactar");
+const overlay = document.getElementById("overlay");
+const formularioReserva = document.getElementById("formulario-reserva");
+const cerrarFormulario = document.getElementById("cerrar-formulario");
+
+contactar.addEventListener("click", function () {
+  formularioReserva.style.display = "block";
+  overlay.style.display = "block";
+  body.style.overflow =
+    "hidden"; /* Evita el desplazamiento cuando el formulario está visible */
+});
+
+cerrarFormulario.addEventListener("click", function () {
+  body.style.removeProperty("overflow");
+  formularioReserva.style.display = "none";
+  overlay.style.display = "none";
+});

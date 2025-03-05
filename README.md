@@ -4,4 +4,4 @@
 
 ## Nota importante
 
-    Uso de `window.onload` en lugar de `DOMContentLoaded` en `lightboxMobile.js`:
+    Uso de `window.onload` en lugar de `DOMContentLoaded` en `lightboxMobile.js`.

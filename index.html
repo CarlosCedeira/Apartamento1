@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/imagenesContainer.css">
     <link rel="stylesheet" href="./css/lightBox.css">
     <link rel="stylesheet" href="./css/comodidadesFrame.css">
+    <link rel="stylesheet" href="./css/formulario.css">
     <link rel="stylesheet" href="./css/footer.css">
 
 
@@ -90,12 +91,10 @@
            ¡Perfecto para vivir o escaparse un fin de semana!
           </p>
 
-          <div class="botones-de-contacto"><button id="contactar">Contactar </button>
-            <button id="airbnb">Ver en Airbnb</button>
-          </div>
+          
         </div>
 
-
+       
 
     
       <div><h2>Comodidades</h2>
@@ -148,7 +147,13 @@
           </li></ul>
         </div></div>
 
+        
+
   </article>
+  <div class="botones-de-contacto">
+    <button id="contactar">Contactar </button>
+    <button id="airbnb">Ver en Airbnb</button>
+  </div>
 
   <div id="comodidades-mapa">
 
@@ -160,6 +165,47 @@
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade"></iframe>       
       </div> 
+
+      <div id="overlay"></div>
+
+      <article id="formulario-reserva">
+        <h2>Formulario de Reserva</h2>
+        <button id="cerrar-formulario">X</button>
+        <form action="#" method="post">
+            <div class="input-flex">
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="input-flex">
+              <div class="form-group">
+                <label for="fecha-entrada">Fecha de Entrada:</label>
+                <input type="date" id="fecha-entrada" name="fecha-entrada" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-salida">Fecha de Salida:</label>
+                <input type="date" id="fecha-salida" name="fecha-salida" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </article>
+        
 
       <footer>
         <div class="footer-container">
