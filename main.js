@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const body = document.querySelector("body");
+const nav = document.querySelector("nav");
 const contactar = document.getElementById("contactar");
 const overlay = document.getElementById("overlay");
 const formularioReserva = document.getElementById("formulario-reserva");
@@ -35,10 +36,12 @@ contactar.addEventListener("click", function () {
   overlay.style.display = "block";
   body.style.overflow =
     "hidden"; /* Evita el desplazamiento cuando el formulario está visible */
+  nav.style.display = "none";
 });
 
 cerrarFormulario.addEventListener("click", function () {
   body.style.removeProperty("overflow");
   formularioReserva.style.display = "none";
   overlay.style.display = "none";
+  nav.style.display = "block";
 });

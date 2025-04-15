@@ -11,17 +11,21 @@ html {
 
 body {
     background-color: rgba(212, 206, 206, 0.479);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1, h2 {
     font-family: "montserrat", sans-serif;
+
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.5rem;
+
 }
 
 h2 {
@@ -30,7 +34,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: medium;
     margin-top: 2%;
 }
 
@@ -65,7 +69,26 @@ article {
     display: flex;
 }
 
+.whatsapp-button {
+    position: fixed; /* Posición fija */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la parte derecha */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
 
+.whatsapp-icon {
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Alto del icono */
+}
 
 
 @media (max-width: 768px) {

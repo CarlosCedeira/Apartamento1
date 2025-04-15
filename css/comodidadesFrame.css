@@ -1,6 +1,6 @@
 
 #precio-texto-contenedor {
-    width: 50%;
+    width: 70%;
 }
 
 #contenedor-comodidades {
@@ -8,6 +8,8 @@
     justify-content: space-between;
 
 }
+
+
 
 #precio-texto-contenedor p {
     margin-top: 5%;
@@ -47,14 +49,15 @@
 
 .comodidades svg {
     margin-top: 3px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     fill: #5f6368;
 }
 
 iframe {
     border-radius: 25px;
     width: 100%;
+    height: 100%;
 }
 
 

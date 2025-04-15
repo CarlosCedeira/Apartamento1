@@ -1,0 +1,46 @@
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #2A9D2A; /* Color de fondo del menú */
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 1.2rem; /* Espaciado interno */
+    position: -webkit-sticky; /* Soporte para Safari */
+    position: sticky; /* Hace que el encabezado sea sticky */
+    top: 0; /* Posición superior */
+    z-index: 1; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+.nav-list {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Alinea los elementos de la lista en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 2rem; /* Espacio entre los elementos */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+}
+
+
+
+.nav-list a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+}
+
+.nav-list a:hover {
+    color: #39DA39; /* Color del texto al pasar el ratón */
+}
+
+.nav-list li a[href="#reservar"] {
+    background-color: white; /* Color de fondo específico */
+    color: #2A9D2A;
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 9rem;
+}
+
+.nav-list li a[href="#reservar"]:hover {
+    background-color: #2A9D2A; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
+}

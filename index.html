@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./css/estilosGenerales.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/imagenesContainer.css">
     <link rel="stylesheet" href="./css/lightBox.css">
     <link rel="stylesheet" href="./css/comodidadesFrame.css">
@@ -16,6 +17,18 @@
 </head>
 <body>
 
+
+<header>
+  
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#zona">Zona</a></li>
+        <li><a href="#apartamento">Apartamento</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#reservar">Reservar Ahora</a></li>
+      </ul>
+    </nav>
 <article style="display: block;"> <!-- Etilo en linea para obligar a no coger el estilo deifinido en otro archivo -->
 
 
@@ -24,8 +37,9 @@
 
 
   
-<p>
-  
+  <h1>Apartamento en Nigrán</h1>
+  <h3>primera linea de playa</h3> 
+    
   <div class="contenedor-imagenes">
     <figure class="imagen-grande">
       <img id="imagen-principal" src="./Images/Panoramica.png" data-indice="0" alt="Galería de imágenes" />
@@ -76,13 +90,12 @@
 </article>
 
 
-<article id="contenedor-espacio">      
+<article  id="apartamento">      
 
 
         <div id="precio-texto-contenedor">
 
-          <h1>Apartamento en Nigrán</h1>
-          <h3>primera linea de playa</h3> 
+          
 
 
           <p>Ubicado en el corazón del Val Miñor, este encantador apartamento te ofrece un entorno natural inigualable. 
@@ -91,7 +104,11 @@
            ¡Perfecto para vivir o escaparse un fin de semana!
           </p>
 
-          
+          <div class="botones-de-contacto">
+            <button id="contactar">Contactar </button>
+            <button id="airbnb">Ver en Airbnb</button>
+          </div>
+
         </div>
 
        
@@ -145,26 +162,24 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
             <h3>Playa</h3>
           </li></ul>
-        </div></div>
+        </div> <div id="comodidades-mapa">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2391007.199043378!2d-8.71512040813736!3d42.22956886500603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd258b4c2518fdd7%3A0x186aa4f6ada2360!2sPlaya%20de%20Madorra!5e1!3m2!1ses!2sie!4v1727046515241!5m2!1ses!2sie" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                id="ubicacion"></iframe>       
+              </div></div>
 
         
 
   </article>
-  <div class="botones-de-contacto">
-    <button id="contactar">Contactar </button>
-    <button id="airbnb">Ver en Airbnb</button>
-  </div>
 
-  <div id="comodidades-mapa">
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2391007.199043378!2d-8.71512040813736!3d42.22956886500603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd258b4c2518fdd7%3A0x186aa4f6ada2360!2sPlaya%20de%20Madorra!5e1!3m2!1ses!2sie!4v1727046515241!5m2!1ses!2sie" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"></iframe>       
-      </div> 
+  
 
       <div id="overlay"></div>
 
@@ -190,6 +205,10 @@
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" required>
             </div>
+            <div class="form-group">
+              <label for="numero-huespedes">numero de huespedes:</label>
+              <input type="number" id="numero-huespedes" name="numero-huespedes" required>
+          </div>
             <div class="input-flex">
               <div class="form-group">
                 <label for="fecha-entrada">Fecha de Entrada:</label>
@@ -225,6 +244,10 @@
 
 <script src="./main.js"></script>
 
+
+<a href="https://wa.me/34651694333?text=Hola,%20quiero%20más%20información%20sobre%20el%20apartamento" class="whatsapp-button" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+</a>
 </body>
 </html>
 
